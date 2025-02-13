@@ -33,7 +33,7 @@ build/
 .vscode/
 
 ### Personal preferences ###
-*.properties.prod
+*.prod
 ports.md
 bibliografia.txt
 api.yaml
