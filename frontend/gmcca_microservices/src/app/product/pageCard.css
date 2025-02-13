@@ -1,0 +1,30 @@
+.pageCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.cardProduct {
+  width: 50%;
+}
+
+.cardPDF {
+  width: 50%;
+  padding: 2em;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .pageCard {
+    flex-direction: column;
+  }
+
+  .cardProduct {
+    width: 100%;
+  }
+
+  .cardPDF {
+    width: 100%;
+  }
+}

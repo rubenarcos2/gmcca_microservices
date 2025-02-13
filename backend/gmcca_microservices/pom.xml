@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.3.5</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<groupId>com.rarcos</groupId>
+	<artifactId>gmcca_microservices</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>gmcca_microservices</name>
+	<description>Gestión de mercancías con control de acceso microservicios</description>
+	<url>https://github.com/rubenarcos2/proyecto_daw</url>
+
+	<licenses>
+		<license>
+			<name>MIT License</name>
+      		<url>http://www.opensource.org/licenses/mit-license.php</url>
+      		<distribution>repo</distribution>
+	  	</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>owner</id>
+            <name>Rubén Arcos</name>
+            <timezone>UTC+1</timezone>
+			<organizationUrl>rarcos.com</organizationUrl>
+		</developer>
+	</developers>
+
+	<properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+	<modules>
+        <module>gmcca_inventory</module>
+        <module>gmcca_orders</module>
+        <module>gmcca_products</module>
+		<module>gmcca_notifications</module>
+		<module>gmcca_ia_rag</module>
+    </modules>
+
+	<dependencies>
+	</dependencies>
+
+	<build>
+		<plugins>
+		</plugins>
+	</build>
+
+</project>
