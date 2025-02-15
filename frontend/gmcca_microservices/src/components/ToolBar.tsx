@@ -65,7 +65,7 @@ function ToolBar() {
 
   React.useEffect(() => {
     // Connect to the WebSocket server
-    const socket = new SockJS('http://localhost:8080/ws');
+    const socket = new SockJS('https://gmcca-microservices.rarcos.com/notifications/ws');
     const stompClient = Stomp.over(socket);
 
     stompClient.connect({}, () => {

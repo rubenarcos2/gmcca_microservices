@@ -26,7 +26,7 @@ export default function Orders() {
   ];
 
   React.useEffect(() => {
-    fetch('http://localhost:8082/api/order')
+    fetch('https://gmcca-microservices.rarcos.com/orders/api/order')
       .then(response => response.json())
       .then(json => {
         setData(json);
