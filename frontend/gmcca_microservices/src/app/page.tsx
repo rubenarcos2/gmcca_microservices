@@ -56,7 +56,7 @@ export default function Main() {
   ];
 
   React.useEffect(() => {
-    fetch('https://gmcca-microservices.rarcos.com/products/api/product')
+    fetch('https://gmcca-microservices-backend.rarcos.com/products/api/product')
       .then(response => response.json())
       .then(json => {
         setData(json);

@@ -20,7 +20,7 @@ export default function Product() {
   const [fileUploaded, setFileUploaded] = React.useState();
 
   React.useEffect(() => {
-    fetch('https://gmcca-microservices.rarcos.com/products/api/product/code?code=' + code)
+    fetch('https://gmcca-microservices-backend.rarcos.com/products/api/product/code?code=' + code)
       .then(response => response.json())
       .then(json => setData(json))
       .catch(error => console.log(error));
@@ -40,7 +40,7 @@ export default function Product() {
       body: formData,
     };
 
-    fetch('https://gmcca-microservices.rarcos.com/ia_rag/docs/upload', requestOptions)
+    fetch('https://gmcca-microservices-backend.rarcos.com/ia_rag/docs/upload', requestOptions)
       .then(response => response.json())
       .then(json => {
         setFileUploaded(json);
@@ -83,7 +83,7 @@ export default function Product() {
               {data.status == 'PROCESSED' ? (
                 <iframe
                   src={
-                    'https://gmcca-microservices.rarcos.com/ia_rag/docs/download?fileName=' +
+                    'https://gmcca-microservices-backend.rarcos.com/ia_rag/docs/download?fileName=' +
                     data.code +
                     '.pdf'
                   }
