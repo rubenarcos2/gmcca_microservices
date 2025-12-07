@@ -22,7 +22,7 @@
     "@mui/material": "latest",
     "@mui/material-nextjs": "latest",
     "@stomp/stompjs": "^7.0.0",
-    "next": "^15.0.5",
+    "next": "^16.0.7",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
     "react-gtm-module": "^2.0.11",
