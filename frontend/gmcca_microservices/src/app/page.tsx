@@ -56,12 +56,16 @@ export default function Main() {
   ];
 
   React.useEffect(() => {
-    fetch('https://gmcca-microservices-backend.rarcos.com/products/api/product')
+    if(window.top !== window.self){
+      window.top?.location.replace(window.location.href);
+    }else{
+      fetch('https://gmcca-microservices-backend.rarcos.com/products/api/product')
       .then(response => response.json())
       .then(json => {
         setData(json);
       })
       .catch(error => console.log(error));
+    }
   }, []);
 
   return (
